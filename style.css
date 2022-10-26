@@ -548,7 +548,7 @@ body {
 .icon--xride {
     -webkit-mask-image: url('./images/allies/Xride\ icon.svg');
     mask-image: url('./images/allies/Xride\ icon.svg');
-    background-color: #000;
+    background: #000;
 }
 
 .ally__item--xride:hover {
@@ -565,7 +565,7 @@ body {
     height: 50px;
     -webkit-mask-image: url('./images/allies/xride\ logo.svg');
     mask-image: url('./images/allies/xride\ logo.svg');
-    background-color: #000;
+    background: #000000;
 
 }
 
