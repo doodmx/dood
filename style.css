@@ -14,6 +14,20 @@
     --black-azell: #101820;
     --green-azell: #38D430;
     --black-urbk: #0F1011;
+    --black-tarky: #161C21;
+    --red-tarky: #F32735;
+    --white-billnex: #F3F7F9;
+    --yellow-billnex: #FFCA29;
+    --orange-billnex: #F79720;
+    --white-xride: #EDF1F9;
+    --blue-sheltec: #0A1930;
+    --pink-volk: #FF004A;
+    --pink-real: #F3B2DB;
+    --white-kurgan: #F6FAF5;
+    --blue-kurgan: #65C6C1;
+    --black-vivac: #042224;
+    --orange-tb:#FF5100;
+    --black-bruker:#2D2A26;
 
 }
 
@@ -172,10 +186,10 @@ body {
 
 .portfolio__title {
     text-align: center;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
-.card {
+/* .card {
     width: 90%;
     height: 160px;
     box-shadow: 0 0 2px 2px black;
@@ -184,7 +198,15 @@ body {
     box-shadow: 0px 0px 15px 2px var(--shadow);
     -webkit-box-shadow: 0px 0px 15px 2px var(--shadow);
     -moz-box-shadow: 0px 0px 15px 2px var(--shadow);
+} */
+.card__img{
+    width: 100%;
+    margin: 0 auto;
+    /* box-shadow: 0px 0px 15px 2px var(--shadow);
+    -webkit-box-shadow: 0px 0px 15px 2px var(--shadow);
+    -moz-box-shadow: 0px 0px 15px 2px var(--shadow); */
 }
+
 
 
 /* footer */
@@ -265,8 +287,8 @@ body {
 
 .avatar__container {
     width: 140px;
-    background: var(--king-blue);
-    box-shadow: 0 0 20px 5px var(--king-blue);
+    background: #3e71cb;
+    box-shadow: 0 0 20px 5px #3e71cb;
     border-radius: 50%;
 }
 
@@ -358,7 +380,7 @@ body {
 .ally__item {
     border: 1px solid var(--king-blue);
     width: 120px;
-    height: 45px;
+    height: 40px;
     display: flex;
     align-items: center;
     padding: 1em;
@@ -377,8 +399,8 @@ body {
 .ally__icon {
     width: 35px;
     height: 50px;
-    -webkit-mask-size: 100%;
-    mask-size: 100%;
+    -webkit-mask-size: contain;
+    mask-size: contain;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-position: center;
@@ -396,54 +418,339 @@ body {
     mask-position: center;
     mask-size: 100%;
 }
-.icon--azell{
+
+.icon--azell {
     -webkit-mask-image: url('./images/allies/Icono\ azell.svg');
     mask-image: url('./images/allies/Icono\ azell.svg');
-    background-color: black;  
+    background-color: black;
 }
-.ally__item--azell:hover{
-    background-color: var(--black-azell); 
+
+.ally__item--azell:hover {
+    background-color: var(--black-azell);
     box-shadow: 0 4px 10px var(--black-azell);
-    /* transform: scale(1.001); */
-    border: none;
+    border: 1px solid var(--black-azell);
 }
-.ally__item--azell:hover .icon--azell{
-    background-color: var(--green-azell); 
+
+.ally__item--azell:hover .icon--azell {
+    background-color: var(--green-azell);
 }
-.ally__logo--azell{
+
+.ally__logo--azell {
     height: 50px;
     -webkit-mask-image: url('./images/allies/Azell.svg');
     mask-image: url('./images/allies/Azell.svg');
-    background-color: black;  
-    
+    background-color: black;
+
 }
-.ally__item--azell:hover .ally__logo--azell{
-    background-color: #FFF; 
+
+.ally__item--azell:hover .ally__logo--azell {
+    background-color: #FFF;
 }
-.ally__item--urbk:hover{
-    background-color: var(--black-urbk); 
+
+/* Urbk */
+.ally__item--urbk:hover {
+    background-color: var(--black-urbk);
     box-shadow: 0 4px 10px var(--black-urbk);
-    transform: scale(1.001);
-    border: none;
+    border: 1px solid var(--black-urbk);
 }
-.ally__item--urbk:hover .icon--urbk{
-    background-color: #fff;
+
+.ally__item--urbk:hover .icon--urbk {
+    background-image: url('./images/allies/Icono_UrbkLegal@3x2.png');
 }
-.icon--urbk{
-    -webkit-mask-image: url('./images/allies/U.svg');
-    mask-image: url('./images/allies/U.svg');
-    background-color: black;  
+
+.icon--urbk {
+    background-image: url('./images/allies/U.svg');
+    background-size:  contain;
+    background-repeat:  no-repeat;
+    background-position:  center;
 }
-.ally__item--urbk:hover .ally__logo--urbk{
-    background-color: #FFF; 
+
+.ally__item--urbk:hover .ally__logo--urbk {
+    background-color: #FFF;
 }
-.ally__logo--urbk{
+
+.ally__logo--urbk {
     height: 50px;
     -webkit-mask-image: url('./images/allies/Urbk.svg');
     mask-image: url('./images/allies/Urbk.svg');
-    background-color: black; 
+    background-color: black;
 }
 
+/* tarky */
+.icon--tarky {
+    -webkit-mask-image: url('./images/allies/T.svg');
+    mask-image: url('./images/allies/T.svg');
+    background-color: black;
+}
+
+.ally__item--tarky:hover {
+    background-color: var(--black-tarky);
+    box-shadow: 0 4px 10px var(--black-tarky);
+    border: 1px solid var(--black-tarky);
+}
+
+.ally__item--tarky:hover .icon--tarky {
+    background-color: var(--red-tarky);
+}
+
+.ally__logo--tarky {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/Tarky.svg');
+    mask-image: url('./images/allies/Tarky.svg');
+    background-color: black;
+
+}
+
+.ally__item--tarky:hover .ally__logo--tarky {
+    background-color: #FFF;
+}
+
+/* billnex */
+.icon--billnex {
+    -webkit-mask-image: url('./images/allies/Billnex\ icon.svg');
+    mask-image: url('./images/allies/Billnex\ icon.svg');
+    background-color: black;
+}
+
+.ally__item--billnex:hover {
+    background: -webkit-linear-gradient(64deg, var(--yellow-billnex), var(--orange-billnex));
+    background: linear-gradient(64deg, var(--yellow-billnex), var(--orange-billnex));
+    box-shadow: 0 4px 10px rgb(20, 20, 20);
+    /* border: 1px solid var(--yellow-billnex); */
+    border-image: -webkit-linear-gradient(64deg, var(--yellow-billnex), var(--orange-billnex));
+    border-image: linear-gradient(64deg, var(--yellow-billnex), var(--orange-billnex));
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.ally__item--billnex:hover .icon--billnex {
+    background-color: var(--white-billnex);
+}
+
+.ally__logo--billnex {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/Billnex\ logo.svg');
+    mask-image: url('./images/allies/Billnex\ logo.svg');
+    background-color: black;
+
+}
+
+.ally__item--billnex:hover .ally__logo--billnex {
+    background-color: var(--white-billnex);
+}
+
+/* xride */
+.icon--xride {
+    -webkit-mask-image: url('./images/allies/Xride\ icon.svg');
+    mask-image: url('./images/allies/Xride\ icon.svg');
+    background-color: black;
+}
+
+.ally__item--xride:hover {
+    background: #000;
+    box-shadow: 0 4px 10px #000;
+    border: 1px solid #000;
+}
+
+.ally__item--xride:hover .icon--xride {
+    background-color: var(--white-xride);
+}
+
+.ally__logo--xride {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/xride\ logo.svg');
+    mask-image: url('./images/allies/xride\ logo.svg');
+    background-color: black;
+
+}
+
+.ally__item--xride:hover .ally__logo--xride {
+    background-color: var(--white-xride);
+}
+/* Bruker */
+.icon--bruker {
+    background-image: url('./images/allies/Escudo.svg');
+    background-size:  contain;
+    background-repeat:  no-repeat;
+    background-position:  center;
+}
+
+.ally__item--bruker:hover {
+    background: var(--black-bruker);
+    box-shadow: 0 4px 10px #000;
+    border: 1px solid var(--black-bruker);
+}
+
+.ally__item--bruker:hover .icon--bruker {
+    background-image: url('./images/allies/Escudo@3x.png');
+}
+
+.ally__logo--bruker {
+    height: 50px;
+    background-image: url('./images/allies/Bruker.svg');
+    background-size:  contain;
+    background-repeat:  no-repeat;
+    background-position:  center;
+}
+.ally__item--bruker:hover .ally__logo--bruker {
+    background-image: url('./images/allies/Bruker@3x.png');
+}
+/* sheltec */
+.icon--sheltec {
+    -webkit-mask-image: url('./images/allies/sheltec\ icon.svg');
+    mask-image: url('./images/allies/sheltec\ icon.svg');
+    background-color: black;
+}
+
+.ally__item--sheltec:hover {
+    background: var(--blue-sheltec);
+    box-shadow: 0 4px 10px var(--blue-sheltec);
+    border: 1px solid var(--blue-sheltec);
+}
+
+.ally__item--sheltec:hover .icon--sheltec {
+    background-color: #fff;
+}
+
+.ally__logo--sheltec {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/sheltec\ logo.svg');
+    mask-image: url('./images/allies/sheltec\ logo.svg');
+    background-color: black;
+
+}
+
+.ally__item--sheltec:hover .ally__logo--sheltec {
+    background-color: #fff;
+}
+
+/* Volk */
+.icon--volk {
+    background-image: url('./images/allies/Icono\ volk.svg');
+    background-size:  contain;
+    background-repeat:  no-repeat;
+    background-position:  center;
+}
+
+.ally__item--volk:hover {
+    background: var(--pink-volk);
+    box-shadow: 0 4px 10px #000;
+    border: 1px solid var(--pink-volk);
+}
+
+.ally__item--volk:hover .icon--volk {
+    background-image: url('./images/allies/icono\ metal\ volk@3x2.png');
+}
+
+.ally__logo--volk {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/Logo\ volk.svg');
+    mask-image: url('./images/allies/Logo\ volk.svg');
+    background-color: black;
+}
+
+.ally__item--volk:hover .ally__logo--volk {
+    background-color: #fff;
+}
+
+/* TigerBox */
+.icon--tb {
+    background-image: url('./images/allies/Icono\ negro\ tb.svg');
+    background-size:  contain;
+    background-repeat:  no-repeat;
+    background-position:  center;
+}
+
+.ally__item--tb:hover {
+    background: var(--orange-tb);
+    box-shadow: 0 4px 10px #000;
+    border: 1px solid var(--orange-tb);
+}
+
+.ally__item--tb:hover .icon--tb {
+    background-image: url('./images/allies/Icono\ tb@3x.png');
+}
+
+.ally__logo--tb {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/tb.svg');
+    mask-image: url('./images/allies/tb.svg');
+    background-color: black;
+}
+
+/* Real Arteaga */
+.icon--real {
+    -webkit-mask-image: url('./images/allies/Icono.svg');
+    mask-image: url('./images/allies/Icono.svg');
+    background-color: black;
+}
+
+.ally__item--real:hover {
+    background: var(--pink-real);
+    box-shadow: 0 4px 10px #000;
+    border: 1px solid var(--pink-real);
+}
+
+.ally__logo--real {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/Real.svg');
+    mask-image: url('./images/allies/Real.svg');
+    background-color: black;
+}
+
+/* Kurgan*/
+.icon--kurgan {
+    -webkit-mask-image: url('./images/allies/Kurgan\ icon.svg');
+    mask-image: url('./images/allies/Kurgan\ icon.svg');
+    background-color: black;
+}
+
+.ally__item--kurgan:hover {
+    background: -webkit-linear-gradient(64deg, var(--white-kurgan), var(--blue-kurgan));
+    background: linear-gradient(64deg, var(--white-kurgan), var(--blue-kurgan));
+    box-shadow: 0 4px 10px #000;
+    /* border: 1px solid var(--blue-kurgan); */
+    border-image: -webkit-linear-gradient(64deg, var(--white-kurgan), var(--blue-kurgan));
+    border-image: linear-gradient(64deg, var(--white-kurgan), var(--blue-kurgan));
+    border-width: 1px;
+    border-style: solid;
+}
+
+.ally__logo--kurgan {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/Kurgan\ logo.svg');
+    mask-image: url('./images/allies/Kurgan\ logo.svg');
+    background-color: black;
+}
+
+/* Vivac */
+.icon--vivac {
+    -webkit-mask-image: url('./images/allies/Icono\ Vivac.svg');
+    mask-image: url('./images/allies/Icono\ Vivac.svg');
+    background-color: black;
+}
+
+.ally__item--vivac:hover {
+    background: var(--black-vivac);
+    box-shadow: 0 4px 10px #000;
+    border: 1px solid var(--black-vivac);
+}
+
+.ally__item--vivac:hover .icon--vivac {
+    background-color: #fff;
+}
+
+.ally__logo--vivac {
+    height: 50px;
+    -webkit-mask-image: url('./images/allies/Vivac.svg');
+    mask-image: url('./images/allies/Vivac.svg');
+    background-color: black;
+}
+
+.ally__item--vivac:hover .ally__logo--vivac {
+    background-color: #fff;
+}
 
 .footer-us {
     background: -webkit-linear-gradient(64deg, var(--very-dark-blue), var(--dark-blue));
@@ -465,7 +772,8 @@ body {
 
 .button--blue {
     width: 192px;
-    padding: 1.3em 0.5em;
+    padding: 1.3em 1em;
+    border-radius: 42px;
     background: -webkit-linear-gradient(50deg, var(--button-blue), var(--dark-blue));
     background: linear-gradient(50deg, var(--button-blue), var(--dark-blue));
 }
@@ -503,7 +811,8 @@ body {
     transform-origin: 0 0;
     transition: all 300ms;
 }
-.label--area{
+
+.label--area {
     transform: translateY(-170px);
 }
 
@@ -521,7 +830,8 @@ body {
     background: linear-gradient(59deg, var(--input-gray), var(--form-blue2));
     transition: all 500ms;
 }
-.input:focus{
+
+.input:focus {
     outline: none;
 }
 
@@ -534,6 +844,7 @@ body {
     opacity: 0.8;
     transform: translateY(-60px) scale(0.6);
 }
+
 .input--area:focus+.label,
 .input--area:not(:placeholder-shown)+.label {
     opacity: 0.8;
