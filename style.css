@@ -182,7 +182,9 @@ body {
     border: none;
     background: -webkit-linear-gradient(50deg, var(--light-blue), var(--king-blue));
     background: linear-gradient(50deg, var(--light-blue), var(--king-blue));
+
 }
+
 
 .portfolio__title {
     text-align: center;
@@ -797,7 +799,7 @@ body {
 
 .input-holder {
     transition: 300ms all;
-    width: 80%;
+    width: 90%;
 }
 
 .label {
@@ -817,7 +819,7 @@ body {
 }
 
 .input {
-    width: 100%;
+    width: calc(100% - 10px);
     height: 60px;
     padding-left: 10px;
     border: none;
