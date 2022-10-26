@@ -570,7 +570,7 @@ body {
 }
 
 .ally__item--xride:hover .ally__logo--xride {
-    background-color: var(--white-xride);
+    /* background-color: var(--white-xride); */
     -webkit-mask-image: url('./images/allies/Xride\ logo-white.svg');
     mask-image: url('./images/allies/Xride\ logo-white.svg');
     /* background-color: #000; */
