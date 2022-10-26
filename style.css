@@ -623,7 +623,7 @@ body {
 
 .ally__logo--sheltec {
     height: 50px;
-    background-image: url('./images/allies/Bruker.svg');
+    background-image: url('./images/allies/Sheltec\ logo.svg');
     background-size:  contain;
     background-repeat:  no-repeat;
     background-position:  center;
@@ -631,7 +631,7 @@ body {
 }
 
 .ally__item--sheltec:hover .ally__logo--sheltec {
-    background-image: url('./images/allies/Bruker@3x.png');
+    background-image: url('./images/allies/Sheltec\ logo-white.svg');
 }
 
 /* Volk */
