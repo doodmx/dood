@@ -145,32 +145,49 @@ body {
 
 .square__title {
     height: 100%;
-    width: 30%;
-    text-align: center;
+    width: 100px;
     line-height: 180px;
     font-size: 1.3em;
-    padding: 0 20px;
     border-radius: 45px;
     transition: all 500ms ease;
+    box-shadow: 0 0 0px 2px var(--dark-blue);
+    overflow: hidden;
+    display: flex;
 
+}
+.question{
+    width: 100px;
+    padding: 0 20px;
+}
+.square__paragraph--hide{
+   opacity: 0;
+    /* width: 100%; */
+    color: #000;
+    font-size: 16px;
+    margin-left: 2em;
+    line-height: 1.5;
+    display: grid;
+    place-items: center;
 }
 
 .square__title:hover {
     box-shadow: 0 0 0px 2px var(--dark-blue);
     color: var(--blue);
+    text-align: left;
     width: 100%;
 }
 
-/* .square__title:hover::after{
-    content: 'Nuestra razón de hacer lo que hacemos';
-    height: 100%;
-    margin-left: auto;
-    color: black;
-    font-size: 16px;
-} */
-.square__title:hover+.square__paragraph {
+
+.square__title:hover .square__paragraph--hide {
+    opacity: 1;
+  
+}
+
+.square__title:hover~.square__paragraph {
+    width: 0;
     display: none;
 }
+
 
 .button {
     display: block;
@@ -564,18 +581,13 @@ body {
 .ally__logo--xride {
     height: 50px;
     background-image: url('./images/allies/Xride-logo.svg');
-    /* mask-image: url('./images/allies/xride\ logo.svg'); */
     background-size:  contain;
     background-repeat:  no-repeat;
     background-position:  center;
-    
-
 }
 
 .ally__item--xride:hover .ally__logo--xride {
-    /* background-color: var(--white-xride); */
     background-image: url('./images/allies/Xride-logo-white.svg');
-    /* background-color: #000; */
 }
 /* Bruker */
 .icon--bruker {
