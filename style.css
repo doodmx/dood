@@ -546,7 +546,7 @@ body {
 .icon--xride {
     -webkit-mask-image: url('./images/allies/Xride\ icon.svg');
     mask-image: url('./images/allies/Xride\ icon.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 .ally__item--xride:hover {
@@ -563,12 +563,15 @@ body {
     height: 50px;
     -webkit-mask-image: url('./images/allies/xride\ logo.svg');
     mask-image: url('./images/allies/xride\ logo.svg');
-    background-color: black;
+    background-color: #000;
 
 }
 
 .ally__item--xride:hover .ally__logo--xride {
     background-color: var(--white-xride);
+    -webkit-mask-image: url('./images/allies/Xride\ logo-white.svg');
+    mask-image: url('./images/allies/Xride\ logo-white.svg');
+    /* background-color: #000; */
 }
 /* Bruker */
 .icon--bruker {
@@ -600,9 +603,9 @@ body {
 }
 /* sheltec */
 .icon--sheltec {
-    -webkit-mask-image: url('./images/allies/sheltec\ icon.svg');
-    mask-image: url('./images/allies/sheltec\ icon.svg');
-    background-color: black;
+    -webkit-mask-image: url('./images/allies/Sheltec\ icon.svg');
+    mask-image: url('./images/allies/Sheltec\ icon.svg');
+    background-color: #000;
 }
 
 .ally__item--sheltec:hover {
@@ -619,7 +622,7 @@ body {
     height: 50px;
     -webkit-mask-image: url('./images/allies/sheltec\ logo.svg');
     mask-image: url('./images/allies/sheltec\ logo.svg');
-    background-color: black;
+    background-color: #000;
 
 }
 
@@ -649,7 +652,7 @@ body {
     height: 50px;
     -webkit-mask-image: url('./images/allies/Logo\ volk.svg');
     mask-image: url('./images/allies/Logo\ volk.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 .ally__item--volk:hover .ally__logo--volk {
@@ -678,14 +681,14 @@ body {
     height: 50px;
     -webkit-mask-image: url('./images/allies/tb.svg');
     mask-image: url('./images/allies/tb.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 /* Real Arteaga */
 .icon--real {
     -webkit-mask-image: url('./images/allies/Icono.svg');
     mask-image: url('./images/allies/Icono.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 .ally__item--real:hover {
@@ -698,14 +701,14 @@ body {
     height: 50px;
     -webkit-mask-image: url('./images/allies/Real.svg');
     mask-image: url('./images/allies/Real.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 /* Kurgan*/
 .icon--kurgan {
     -webkit-mask-image: url('./images/allies/Kurgan\ icon.svg');
     mask-image: url('./images/allies/Kurgan\ icon.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 .ally__item--kurgan:hover {
@@ -723,14 +726,14 @@ body {
     height: 50px;
     -webkit-mask-image: url('./images/allies/Kurgan\ logo.svg');
     mask-image: url('./images/allies/Kurgan\ logo.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 /* Vivac */
 .icon--vivac {
     -webkit-mask-image: url('./images/allies/Icono\ Vivac.svg');
     mask-image: url('./images/allies/Icono\ Vivac.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 .ally__item--vivac:hover {
@@ -747,7 +750,7 @@ body {
     height: 50px;
     -webkit-mask-image: url('./images/allies/Vivac.svg');
     mask-image: url('./images/allies/Vivac.svg');
-    background-color: black;
+    background-color: #000;
 }
 
 .ally__item--vivac:hover .ally__logo--vivac {
