@@ -88,7 +88,7 @@ body {
     top: 0;
     right: 0;
     width: 100%;
-    height: 50%;
+    height: 260px;
     background-color: rgba(129, 171, 182, 0.473);
     padding: 2em 0;
     display: flex;
@@ -96,8 +96,9 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2.4em;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    z-index: 10;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     transform: translateY(-110%);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
