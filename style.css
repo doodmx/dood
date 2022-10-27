@@ -164,6 +164,9 @@ body {
     gap: 1em;
     align-items: center;
 }
+.square--order{
+    flex-direction: row-reverse;
+}
 
 .square__title {
     height: 100%;
@@ -176,6 +179,12 @@ body {
     overflow: hidden;
     display: flex;
 
+}
+.square__title--order{
+    flex-direction: row-reverse;
+}
+.question--order{
+    order: 2;
 }
 .question{
     width: 90px;
@@ -220,6 +229,9 @@ body {
     display: none;
 }
 
+.ver__link{
+    text-decoration: none;
+}
 .button {
     display: block;
     background-color: var(--dark-blue);
