@@ -116,13 +116,31 @@ body {
 }
 
 .hero {}
-
+/* .hero{
+    width: 100%;
+    background-image: url('./images/Aros.svg');
+    background-repeat: no-repeat;
+    background-position: -50% top;
+    background-size: contain;
+} */
+.aro__container{
+    margin: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.aro__img{
+    width: 100%;
+    display: block;
+}
 .logo {
     width: 90%;
-    height: 100vh;
+    /* height: 50vh; */
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 14em;
     object-fit: contain;
+}
+*{
+    border: 1px solid reda;
 }
 
 .hero__info {
