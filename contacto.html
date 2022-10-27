@@ -14,7 +14,7 @@
             <a href="index.html" class="nav__link">Inicio</a>
             <a href="nosotros.html" class="nav__link">Nosotros</a>
             <a href="proyectos.html" class="nav__link">Proyectos</a>
-            <a href="contacto.html" class="nav__link">Contacto</a>
+            <a href="contacto.html" class="nav__link active">Contacto</a>
         </nav>
     </header>
     <main class="main">
@@ -23,22 +23,22 @@
         </h2>
         <form action="" method="post" class="form">
             <div class="input-holder">
-                <input type="text"  name="nombre" id="nombre" class="input" placeholder="Nombre completo">
+                <input type="text"  name="nombre" id="nombre" class="input" placeholder="Nombre completo" required oninput="toggleButton()">
                 <label for="nombre" class="label">Nombre completo</label>
             </div>
             <div class="input-holder">
-                <input type="tel" name="telefono" id="telefono" class="input" placeholder="Teléfono" minlength="10" maxlength="10">
+                <input type="tel" name="telefono" id="telefono" class="input" placeholder="Teléfono" minlength="10" maxlength="10" required oninput="toggleButton()">
                 <label for="telefono" class="label">Teléfono</label>
             </div>
             <div class="input-holder">
-                <input type="email" name="correo" id="correo" class="input" placeholder="Correo">
+                <input type="email" name="correo" id="correo" class="input" placeholder="Correo" required oninput="toggleButton()">
                 <label for="correo" class="label">Correo</label>
             </div>
             <div class="input-holder">
                 <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="Comentarios" class="input input--area"></textarea>
                 <label for="comentarios" class="label label--area">Comentarios</label>
             </div>
-            <button type="submit" class="button button--blue">Enviar</button>
+            <button type="submit" class="button button--blue" id="btn_send" disabled>Enviar</button>
         </form>
     </main>
     <footer class="footer footer-us">

@@ -89,7 +89,7 @@ body {
     right: 0;
     width: 100%;
     height: 260px;
-    background-color: rgba(129, 171, 182, 0.473);
+    background-color: rgba(176, 169, 218, 0.473);
     padding: 2em 0;
     display: flex;
     flex-direction: column;
@@ -113,6 +113,9 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
+}
+.active{
+    color: var(--blue);
 }
 
 .hero {}
@@ -229,6 +232,7 @@ body {
     border: none;
     background: -webkit-linear-gradient(50deg, var(--light-blue), var(--king-blue));
     background: linear-gradient(50deg, var(--light-blue), var(--king-blue));
+    cursor: pointer;
 
 }
 
@@ -826,6 +830,10 @@ body {
     border-radius: 42px;
     background: -webkit-linear-gradient(50deg, var(--button-blue), var(--dark-blue));
     background: linear-gradient(50deg, var(--button-blue), var(--dark-blue));
+}
+.button--blue:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /* Styles for contact page */
