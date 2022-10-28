@@ -1,3 +1,4 @@
+// Show or hide menu
 const hamburger = document.querySelector('.menu');
 const menu = document.querySelector('.nav-menu');
 
@@ -5,7 +6,15 @@ hamburger.addEventListener('click', () =>{
     menu.classList.toggle('show');
 });
 
+window.addEventListener('click', e =>{
+    if(menu.classList.contains('show') && e.target != menu  && e.target != hamburger)
+        menu.classList.toggle('show');
+})
 
+
+
+
+// Form validations
 function validatePhone(phone) {
     return (/^\d{10}$/.test(phone));
 }

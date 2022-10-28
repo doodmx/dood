@@ -320,6 +320,7 @@ body {
 .footer__media img {
     width: 40px;
     height: 40px;
+    display: block;
 }
 
 /* Styles for page nosotros */
@@ -844,7 +845,9 @@ body {
 .projects {
     margin-bottom: 6em;
 }
-
+.behance__text-desktop{
+    display: none;
+}
 .projects__title {
     margin-left: auto;
     margin-right: auto;
@@ -989,6 +992,7 @@ body {
 
     .square {
         width: 30%;
+        min-width: 350px;
     }
 
     .square--order {
@@ -1105,6 +1109,97 @@ body {
         display: block;
         width: 80px;
     }
+    .project__title-container{
+        margin-top: 4em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    .projects__title{
+        margin: 0;
+        background-color: #fff;
+        width: 360px;
+    }
+    .behance__text-desktop{
+        display: block;
+        padding: 2em;
+        text-align: center;
+        border: 2px solid var(--dark-blue);
+        line-height: 1.5;
+        font-weight: 600;
+        width: 310px;
+        border-radius: 20px;
+    }
+    .behance__link{
+        color: blue;
+    }
+
+
+
+    /* Styles for contact page */
+    .main--contact{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        max-width: 1600px;
+        margin: 5em auto;
+        align-items: center;
+        padding: 2em;
+    }
+    .title__container{
+        width: 48%;
+        height: 100%;
+        box-shadow: 0 0 20px 5px inset #4F49FB84;
+        border-radius: 20px;
+    }
+    .contact__title{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-image: url('./images/Circulo.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .form {
+        width: 46%;
+        margin: 0;
+    }
+    #btn_send{
+        display: block;
+    }
+
+    /* Styles for footer */
+    .footer {
+        width: 100%;
+        /* background: -webkit-linear-gradient(64deg, #fff, var(--light-blue));
+        background: linear-gradient(64deg, #fff, var(--light-blue)); */
+        /* background-image: url('./images/Footer_Light@2x.png');
+        background-repeat: no-repeat;
+        background-size: cover; */
+        /* background-position: -150px; */
+    }
+    .footer__title{
+        display: inline-block;
+    }
+    
+    .footer--desktop{
+        display: flex;
+        align-items: center;
+    }
+    .footer__address{
+        width: 310px;
+        margin: 0;
+        margin-left: 4em;
+        margin-right: auto;
+        text-align: left;
+    }
+    .footer__social {
+        margin-bottom: 0;
+    }
 
 }

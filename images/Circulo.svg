@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="675.585" height="675.585" viewBox="0 0 675.585 675.585">
+  <defs>
+    <filter id="Ellipse_35" x="0" y="0" width="675.585" height="675.585" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="32.581" result="blur"/>
+      <feFlood flood-color="#025af5" flood-opacity="0.6"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.348" y1="0.024" x2="0.652" y2="0.976" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#14387a"/>
+      <stop offset="0.145" stop-color="#025af5"/>
+      <stop offset="0.299" stop-color="#4f49fb"/>
+      <stop offset="0.434" stop-color="#c5d2ff"/>
+      <stop offset="0.577" stop-color="#4fc4ff"/>
+      <stop offset="0.688" stop-color="#307cff"/>
+      <stop offset="0.854" stop-color="#000fff"/>
+      <stop offset="1" stop-color="#000f29"/>
+    </linearGradient>
+  </defs>
+  <g id="Circulo" transform="translate(-98.512 53.488)">
+    <g transform="matrix(1, 0, 0, 1, 98.51, -53.49)" filter="url(#Ellipse_35)">
+      <circle id="Ellipse_35-2" data-name="Ellipse 35" cx="240.049" cy="240.049" r="240.049" transform="translate(97.74 97.74)" fill="#000f29"/>
+    </g>
+    <path id="Path_91" data-name="Path 91" d="M436.377,46.154a239.115,239.115,0,1,1-72.666,11.4,236.926,236.926,0,0,1,72.666-11.4h0m-.015-1.962a239.96,239.96,0,0,0-73.248,11.495C236.851,96.109,167.264,231.234,207.687,357.5,240.32,459.429,334.662,524.418,436.248,524.418A239.932,239.932,0,0,0,509.5,512.923c126.262-40.422,195.85-175.547,155.426-301.81C632.29,109.18,537.948,44.186,436.362,44.192Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
