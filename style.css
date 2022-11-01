@@ -976,6 +976,9 @@ body {
         border-top-left-radius: 40px;
         border-bottom-left-radius: 40px;
     }
+    .nav__link--dark{
+        color: var(--very-dark-blue);
+    }
 
     .show {
         transform: translateX(0);
@@ -1243,6 +1246,29 @@ body {
     }
     .footer__social {
         margin-bottom: 0;
+    }
+    /* Styles for whatsapp icon */
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+        background-color: var(--dark-blue);
+        border-radius: 50%;
+        z-index: 1000;
+        transition: background-image 300ms linear;
+        background-image: url('./images/media/whatsapp.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: visible;
+    }
+    
+    .float:hover{
+        background-image: url('./images/media/whatsapp-green.svg');
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 0;
     }
 
 }
